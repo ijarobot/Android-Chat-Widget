@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/messageToolBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="input message"
+            android:maxHeight="80dp"
+            android:textSize="16sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/faceButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/face_btn_normal" />
+
+        <Button
+            android:id="@+id/moreTypeButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/type_select_btn_normal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:text="Send"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomHideLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/moreTypeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="#f6f5f5"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/fuctionViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="160dp" >
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/pagePointLayout"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="6dip"
+                android:background="#00000000"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/faceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f6f5f5"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/faceCategroyViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="170dp" >
+            </android.support.v4.view.ViewPager>
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/faceCategroyTabs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/faceCategroyViewPager"
+                android:background="#ffffff"
+                android:visibility="visible"
+                app:pstsDividerColor="#a7a5a5"
+                app:pstsIndicatorColor="#ffffff"
+                app:pstsShouldExpand="true"
+                app:pstsTabPaddingLeftRight="14dip"
+                app:pstsUnderlineColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="34dip"
+    android:layout_height="34dip"
+    android:gravity="center"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"  
+		android:adjustViewBounds="true"  />
+
+</RelativeLayout>
