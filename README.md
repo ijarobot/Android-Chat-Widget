@@ -14,7 +14,7 @@ How to use?
 ===================
 1.In Layout
 
-<!-- lang: xml -->
+
      <com.jialin.chat.MessageInputToolBox
         android:id="@+id/messageInputToolBox"
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@ How to use?
 
 
 2.In Activity
-<!-- lang: xml -->
+
     	/**
     	 * init MessageInputToolBox
     	 */
