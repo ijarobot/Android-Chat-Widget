@@ -53,3 +53,14 @@ How to use?
     
     		box.setFunctionData(functionData);
     	}
+		
+		
+Tips
+===================		
+
+Run Android-Chat-Widget-Example, need reference android-support-v7-appcompat project
+
+
+Blog
+===================	
+[http://jingdl.com/blog/2014/12/06/android-liao-tian-kong-jian-android-chat-widget/](http://jingdl.com/blog/2014/12/06/android-liao-tian-kong-jian-android-chat-widget/)
