@@ -159,8 +159,8 @@ public class MessageInputToolBox extends RelativeLayout {
 				@Override
 				public void onClick(View v) {
 					if(faceLayout.getVisibility() == VISIBLE){
-						showKeyboard(context);
 						hideFaceLayout();
+						showKeyboard(context);
 					}else{
 						showFaceLayout();
 					}
@@ -211,19 +211,31 @@ public class MessageInputToolBox extends RelativeLayout {
 				@Override
 				public void onClick(View v) {
 					hideKeyboard(context);
-					bottomHideLayout.setVisibility(VISIBLE);
-					moreTypeLayout.setVisibility(VISIBLE);
-					faceLayout.setVisibility(GONE);
+					
+					postDelayed(new Runnable() {
+						@Override
+						public void run() {
+							moreTypeLayout.setVisibility(View.GONE);
+							faceLayout.setVisibility(View.VISIBLE);
+							bottomHideLayout.setVisibility(View.VISIBLE);
+						}
+					}, 50);
 				}
 			});
 			
 		}
 
-	public void showFaceLayout(){
+	public void showFaceLayout() {
 		hideKeyboard(this.context);
-		moreTypeLayout.setVisibility(View.GONE);
-		faceLayout.setVisibility(View.VISIBLE);
-		bottomHideLayout.setVisibility(View.VISIBLE);
+
+		postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				moreTypeLayout.setVisibility(View.GONE);
+				faceLayout.setVisibility(View.VISIBLE);
+				bottomHideLayout.setVisibility(View.VISIBLE);
+			}
+		}, 50);
 	}
 	
 	public void hideFaceLayout(){
