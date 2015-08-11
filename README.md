@@ -64,3 +64,7 @@ Run Android-Chat-Widget-Example, need reference android-support-v7-appcompat pro
 Blog
 ===================	
 [http://jingdl.com/blog/2014/12/06/android-liao-tian-kong-jian-android-chat-widget/](http://jingdl.com/blog/2014/12/06/android-liao-tian-kong-jian-android-chat-widget/)
+
+招聘广告
+===================
+招聘 php 工程师4枚，ios，android工程师各2枚，深圳科技园非常有前途的创业公司，国内优秀SaaS服务提供商，全员持股！ 需要的QQ( 48407606 / 295893265) ！
