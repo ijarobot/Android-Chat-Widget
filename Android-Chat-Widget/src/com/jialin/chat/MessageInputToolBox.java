@@ -367,8 +367,8 @@ public class MessageInputToolBox extends RelativeLayout {
 			}
 
 			@Override
-			public boolean isViewFromObject(View arg0, Object arg1) {
-				return arg0 == arg1;
+			public boolean isViewFromObject(View view, Object obj) {
+				return view == obj;
 			}
 
 			@Override
@@ -377,18 +377,18 @@ public class MessageInputToolBox extends RelativeLayout {
 			}
 
 			@Override
-			public void destroyItem(View arg0, int arg1, Object arg2) {
-				System.out.println(arg0 + "  " + arg1 + "  " + arg2);
-				((ViewPager) arg0).removeView(functionGridViewList.get(arg1));
+			public void destroyItem(View view, int index, Object obj) {
+				System.out.println(view + "  " + index + "  " + obj);
+				((ViewPager) view).removeView(functionGridViewList.get(index));
 			}
 
 			/***
 			 * 获取每一个item?类于listview中的getview
 			 */
 			@Override
-			public Object instantiateItem(View arg0, int arg1) {
-				((ViewPager) arg0).addView(functionGridViewList.get(arg1));
-				return functionGridViewList.get(arg1);
+			public Object instantiateItem(View view, int index) {
+				((ViewPager) view).addView(functionGridViewList.get(index));
+				return functionGridViewList.get(index);
 			}
 			
 		});
