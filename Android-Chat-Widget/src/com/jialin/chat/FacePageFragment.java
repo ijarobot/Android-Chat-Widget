@@ -159,8 +159,8 @@ public class FacePageFragment extends Fragment {
 		}
 
 		@Override
-		public boolean isViewFromObject(View arg0, Object arg1) {
-			return arg0 == arg1;
+		public boolean isViewFromObject(View view, Object obj) {
+			return view == obj;
 		}
 
 		@Override
@@ -169,14 +169,14 @@ public class FacePageFragment extends Fragment {
 		}
 
 		@Override
-		public void destroyItem(View arg0, int arg1, Object arg2) {
-			((ViewPager) arg0).removeView(gridViewList.get(arg1));
+		public void destroyItem(View view, int index, Object obj) {
+			((ViewPager) view).removeView(gridViewList.get(index));
 		}
 
 		@Override
-		public Object instantiateItem(View arg0, int arg1) {
-			((ViewPager) arg0).addView(gridViewList.get(arg1));
-			return gridViewList.get(arg1);
+		public Object instantiateItem(View view, int index) {
+			((ViewPager) view).addView(gridViewList.get(index));
+			return gridViewList.get(index);
 		}
 
 	}
