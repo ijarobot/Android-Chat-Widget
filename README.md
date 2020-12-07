@@ -6,7 +6,7 @@ An Android Chat Widget, like WhatsApp \ Line \ WeChat
 
 Demo
 ===================
-![](http://git.oschina.net/ijarobot/Android-Chat-Widget/raw/master/Android-Chat-Widget-Example/chatdemo.gif)
+![](https://raw.githubusercontent.com/ijarobot/Android-Chat-Widget/master/Android-Chat-Widget-Example/chatdemo.gif)
 
 
 
@@ -63,5 +63,5 @@ Run Android-Chat-Widget-Example, need reference android-support-v7-appcompat pro
 
 Blog
 ===================	
-[http://jingdl.com/blog/2014/12/06/android-liao-tian-kong-jian-android-chat-widget/](http://jingdl.com/blog/2014/12/06/android-liao-tian-kong-jian-android-chat-widget/)
+[http://jingdl.com/blog/android-liao-tian-kong-jian-android-chat-widget/](http://jingdl.com/blog/android-liao-tian-kong-jian-android-chat-widget/)
 
