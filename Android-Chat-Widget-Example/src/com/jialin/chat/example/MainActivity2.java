@@ -22,7 +22,7 @@ import com.jialin.chat.MessageInputToolBox;
 import com.jialin.chat.OnOperationListener;
 import com.jialin.chat.Option;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity2 extends ActionBarActivity {
 	
 	private ListView listView;
 	private MessageAdapter adapter;
@@ -90,7 +90,7 @@ public class MainActivity extends ActionBarActivity {
 				default:
 					break;
 				}
-				Toast.makeText(MainActivity.this, "Do some thing here, index :" +index, 1000).show();
+				Toast.makeText(MainActivity2.this, "Do some thing here, index :" +index, 1000).show();
 				
 			}
 			
